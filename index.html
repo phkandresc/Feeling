@@ -2,58 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Feeling/vite.svg" />
+    <link rel="icon" href="/Feeling/assets/logo-B4VH3ei2.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Feeling</title>
-    <script type="module" crossorigin src="/Feeling/assets/index-CbSUu9L0.js"></script>
-    <link rel="stylesheet" crossorigin href="/Feeling/assets/index-CRMR9Jx5.css">
+    <script type="module" crossorigin src="/Feeling/assets/index-B8r6GABx.js"></script>
+    <link rel="stylesheet" crossorigin href="/Feeling/assets/index-BermwU-4.css">
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="/Feeling/assets/logo-Badp-Ejn.png" alt="Feeling Logo" />
-        <a href="" class="letras-logo">Feeling</a>
+    <div class="relative">
+      <div class="relative">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+          <div class="navbar-container">
+            <img src="/Feeling/assets/logo-Badp-Ejn.png" alt="Feeling Logo" class="logo" />
+            <h1 class="navbar-title">Feeling</h1>
+            <button id="menuButton" class="menu-button">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+          <div class="mobile-menu-header">
+            <h1 class="navbar-title">Feeling</h1>
+            <button id="closeMenu" class="close-button">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+          <div class="mobile-menu-content">
+            <a
+              href="https://instagram.com/feeling"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="menu-item"
+            >
+              <i data-lucide="instagram" class="icon"></i> @feeling
+            </a>
+            <a href="#location" class="menu-link">Ubicación</a>
+          </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-container">
+            <div class="hero-content">
+              <h2 class="hero-title">Feeling</h2>
+              <p class="hero-description">Today you feel …</p>
+              <a
+                href="https://instagram.com/thisfeeling.ec"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hero-button"
+              >
+                <i data-lucide="instagram" class="icon"></i>
+                Síguenos en Instagram
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section class="products-section">
+          <div class="products-container">
+            <div id="categories" class="categories-container">
+              <!-- Categories will be inserted here -->
+            </div>
+            <div id="products" class="products-grid">
+              <!-- Products will be inserted here -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="location-section">
+          <div class="container">
+            <div class="location-content">
+              <div class="location-text">
+                <h3 class="location-title">VISÍTANOS EN CUENCA</h3>
+                <p class="location-description">
+                  Explora nuestra colección completa en nuestra tienda física.
+                  Cada prenda cuenta una historia de estilo urbano con esencia
+                  cuencana.
+                </p>
+                <div class="location-address">
+                  <i data-lucide="map-pin" class="icon"></i>
+                  <span>Calle Larga y Benigno Malo, Cuenca, Ecuador</span>
+                </div>
+              </div>
+              <div class="location-map">
+                <div class="map-container">
+                  <!-- Aquí podrías insertar un mapa o imagen -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <a
+              href="https://instagram.com/feeling"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <i data-lucide="instagram" class="icon"></i>
+              @feeling
+            </a>
+            <p class="footer-text">
+              Síguenos en Instagram para ver los últimos lanzamientos, eventos
+              especiales y contenido exclusivo.
+            </p>
+            <div class="footer-bottom">
+              © 2024 Feeling. Todos los derechos reservados.
+            </div>
+          </div>
+        </footer>
       </div>
-
-      <nav class="redes">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-      </nav>
-    </header>
-
-    <section class="banner">
-      <div class="image"></div>
-      <div class="content">
-        <h2 class="title">COMING SOON</h2>
-        <p class="description">Today you feel ?</p>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2>About</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, alias.
-      </p>
-    </section>
-    <!--
-    
-    <section>
-      <video
-        id="background-video"
-        autoplay
-        loop
-        muted
-        poster="https://assets.codepen.io/6093409/river.jpg"
-      >
-        <source
-          src="https://assets.codepen.io/6093409/river.mp4"
-          type="video/mp4"
-        />
-      </video>
-    </section>
--->
+    </div>
   </body>
 </html>
